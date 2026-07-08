@@ -16,9 +16,15 @@ const poorUser={
     }
 }
 poorUser.addBalance(1000)
-console.log(poorUser);
+// console.log(poorUser);
 
 // Loop callback function
 const arr:number[]=[1,4,5,6]
 const squareArr = arr.map((elem:number):number=>elem*elem)
-console.log(squareArr);
+// console.log(squareArr);
+
+// Rest Operator
+const sendInvite= (...friends:string[])=>{
+    friends.forEach((friend:string)=>console.log(friend))
+}
+sendInvite("pintu","Chintu","Jhantu")
