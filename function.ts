@@ -7,3 +7,13 @@ const addArrow =(num1:number,num2:number):number=>{
     return num1+num2
 }
 console.log(addArrow(1,1));
+// Object Function Method 
+const poorUser={
+    balance:0,
+    addBalance(value:number):number{
+        this.balance= this.balance+value;
+        return this.balance;
+    }
+}
+poorUser.addBalance(1000)
+console.log(poorUser);
